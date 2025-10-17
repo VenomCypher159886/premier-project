@@ -302,6 +302,7 @@ button {
     .item-1, .item-2, .item-3, .item-4 {
         width: 45%;
         min-width: 140px;
+        height: 10vh;
     }
     
     .item-1-box, .item-2-box, .item-3-box, .item-4-box {
