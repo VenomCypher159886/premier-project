@@ -110,17 +110,7 @@ ul {
 
 
 
-.image-placeholder-text {
-    display: flex;
-    color: #e5e7eb;
-    width: 350px;
-    height: 150px;
-    background-color: rgb(111, 138, 138);
-    justify-content: center;
-    align-items: center;
-    margin-left: 18px;
-    margin-right: 18px;
-}
+
 
 button {
     background-color: #3882f6;
