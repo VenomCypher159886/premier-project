@@ -108,6 +108,10 @@ ul {
     
 }
 
+.image-placeholder img {
+
+}
+
 
 
 
@@ -172,7 +176,7 @@ button {
     font-size: large;
 }
 
-.item-1-box img, .item-2-box img, .item-3-box img, .item-4-box img {
+.item-1-box img, .item-2-box img, .item-3-box img, .item-4-box img .image-placeholder img {
     width: 70%;
     height: 70%;
     object-fit: cover;
