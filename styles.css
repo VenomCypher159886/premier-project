@@ -276,9 +276,9 @@ button {
     }
     
     .image-placeholder img {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
-        max-height: 200px;
+        max-height: 150px;
         object-fit: contain;
     }
     
@@ -373,7 +373,8 @@ button {
     }
     
     .image-placeholder img {
-        max-height: 150px;
+        max-width: 70%;
+        max-height: 120px;
     }
     
     .segment-3 {
