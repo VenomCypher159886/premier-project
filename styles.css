@@ -340,3 +340,89 @@ button {
         font-size: 20px;
     }
 }
+
+/* Landscape orientation for mobile devices */
+@media (max-width: 768px) and (orientation: landscape) {
+    .segment-1 {
+        min-height: 100vh;
+        padding: 10px 20px;
+    }
+    
+    .segment-1-text-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .segment-1-text {
+        width: 60%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .hero-text {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .hero-subtext {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .image-placeholder {
+        width: 40%;
+        justify-content: center;
+        margin-top: 0;
+    }
+    
+    .image-placeholder img {
+        max-width: 100%;
+        max-height: 200px;
+        object-fit: contain;
+    }
+    
+    .segment-1-button {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .segment-1-button button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Small mobile landscape */
+@media (max-width: 480px) and (orientation: landscape) {
+    .segment-1-text-content {
+        gap: 15px;
+        padding: 5px;
+    }
+    
+    .segment-1-text {
+        width: 65%;
+    }
+    
+    .hero-text {
+        font-size: 24px;
+    }
+    
+    .hero-subtext {
+        font-size: 12px;
+    }
+    
+    .image-placeholder {
+        width: 35%;
+    }
+    
+    .image-placeholder img {
+        max-height: 150px;
+    }
+    
+    .segment-1-button button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
