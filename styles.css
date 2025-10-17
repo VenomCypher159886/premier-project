@@ -301,7 +301,7 @@ button {
     }
     
     .item-1, .item-2, .item-3, .item-4 {
-        width: 45%;
+        width: 65%;
         min-width: 140px;
         height: 15vh;
         padding: 10px;
