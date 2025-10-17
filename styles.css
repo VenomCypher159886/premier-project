@@ -250,3 +250,153 @@ button {
     align-items: center;
     padding: 18px;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .header-left {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    /* Segment 1 - Hero section */
+    .segment-1-text-content {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .segment-1-text {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text {
+        font-size: 32px;
+    }
+    
+    .hero-subtext {
+        font-size: 16px;
+    }
+    
+    .image-placeholder {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .image-placeholder img {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+    }
+    
+    .segment-1-button {
+        margin-left: 20px;
+        justify-content: center;
+    }
+    
+    /* Segment 2 - Info boxes */
+    .segment-2-selections {
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .item-1, .item-2, .item-3, .item-4 {
+        width: 45%;
+        min-width: 140px;
+    }
+    
+    .item-1-box, .item-2-box, .item-3-box, .item-4-box {
+        width: 100%;
+        height: 120px;
+        min-height: 120px;
+    }
+    
+    .item-1-box img, .item-2-box img, .item-3-box img, .item-4-box img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    /* Segment 3 - Quote */
+    .segment-3 {
+        padding: 40px 20px;
+        font-size: 24px;
+    }
+    
+    /* Segment 4 - Call to action */
+    .segment-4 {
+        margin: 20px;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .segment-4-text {
+        font-size: 20px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .header-left {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    
+    .segment-1-text-content {
+        padding: 15px;
+    }
+    
+    .hero-text {
+        font-size: 28px;
+    }
+    
+    .hero-subtext {
+        font-size: 14px;
+    }
+    
+    .segment-2-selections {
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 15px;
+    }
+    
+    .item-1, .item-2, .item-3, .item-4 {
+        width: 100%;
+    }
+    
+    .item-1-box, .item-2-box, .item-3-box, .item-4-box {
+        height: 100px;
+        min-height: 100px;
+    }
+    
+    .item-1-box img, .item-2-box img, .item-3-box img, .item-4-box img {
+        width: 75%;
+        height: 75%;
+    }
+    
+    .image-placeholder img {
+        max-height: 150px;
+    }
+    
+    .segment-3 {
+        padding: 30px 15px;
+        font-size: 20px;
+    }
+    
+    .segment-4 {
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .segment-4-text {
+        font-size: 18px;
+    }
+}
