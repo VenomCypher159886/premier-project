@@ -72,23 +72,29 @@ ul {
    color: #e5e7eb;
    flex-direction: column;
    flex-wrap: wrap;
-   width: 50vh;
+  width: 100%;
    margin-left: 48px;
 
 
    
 }
 
+.segment-1{
+    
+}
+
 .segment-1-text-content {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     
   
 }
 
 .hero-text {
-    font-size: 48px;
+    font-size: 40px;
     color: #f9faf8;
+    width: 75%;
 }
 
 .hero-subtext {
@@ -177,8 +183,8 @@ button {
 }
 
 .item-1-box img, .item-2-box img, .item-3-box img, .item-4-box img {
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
     object-fit: cover;
     border-radius: 8px;
     
@@ -258,6 +264,7 @@ button {
         flex-direction: column;
         padding: 20px;
         text-align: center;
+        width: max-content;
     }
     
     .segment-1-text {
