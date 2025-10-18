@@ -79,9 +79,6 @@ ul {
    
 }
 
-.segment-1{
-    
-}
 
 .segment-1-text-content {
     display: flex;
@@ -254,17 +251,45 @@ button {
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
     /* Header adjustments */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
     .header-left {
         font-size: 20px;
-        margin-left: 20px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .header-left img {
+        max-width: 150px;
+        height: auto;
+    }
+    
+    .header-right {
+        margin-right: 0;
+        font-size: 16px;
+    }
+    
+    ul {
+        margin: 0;
+        gap: 20px;
     }
     
     /* Segment 1 - Hero section */
+    .segment-1 {
+        min-height: auto;
+        padding: 20px 0;
+    }
+    
     .segment-1-text-content {
         flex-direction: column;
         padding: 20px;
         text-align: center;
-        width: max-content;
+        width: 100%;
+        margin: 0;
     }
     
     .segment-1-text {
@@ -274,11 +299,14 @@ button {
     }
     
     .hero-text {
-        font-size: 32px;
+        font-size: 28px;
+        width: 100%;
+        line-height: 1.2;
     }
     
     .hero-subtext {
         font-size: 16px;
+        margin-top: 10px;
     }
     
     .image-placeholder {
@@ -294,8 +322,9 @@ button {
     }
     
     .segment-1-button {
-        margin-left: 20px;
+        margin-left: 0;
         justify-content: center;
+        width: 100%;
     }
     
     /* Segment 2 - Info boxes */
@@ -350,9 +379,18 @@ button {
 
 /* Landscape orientation for mobile devices */
 @media (max-width: 768px) and (orientation: landscape) {
-  .image-placeholder img{
-    width: 20px;
-  }
+    .segment-1 {
+        min-height: 50vh;
     }
+    
+    .hero-text {
+        font-size: 24px;
+    }
+    
+    .image-placeholder img {
+        max-width: 200px;
+        max-height: 100px;
+    }
+}
 
   
