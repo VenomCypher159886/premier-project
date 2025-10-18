@@ -2,8 +2,8 @@ body {
     font-family: Roboto;
     margin: 0px;
     height: 100vh;
-  
- 
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .segment-1 {
@@ -250,11 +250,23 @@ button {
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+    /* Prevent horizontal overflow */
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
     /* Header adjustments */
     .header {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        width: 100%;
+        max-width: 100%;
     }
     
     .header-left {
@@ -276,12 +288,16 @@ button {
     ul {
         margin: 0;
         gap: 20px;
+        width: 100%;
+        justify-content: center;
     }
     
     /* Segment 1 - Hero section */
     .segment-1 {
         min-height: auto;
         padding: 20px 0;
+        width: 100%;
+        max-width: 100%;
     }
     
     .segment-1-text-content {
@@ -289,11 +305,13 @@ button {
         padding: 20px;
         text-align: center;
         width: 100%;
+        max-width: 100%;
         margin: 0;
     }
     
     .segment-1-text {
         width: 100%;
+        max-width: 100%;
         margin-left: 0;
         margin-bottom: 20px;
     }
@@ -301,17 +319,23 @@ button {
     .hero-text {
         font-size: 28px;
         width: 100%;
+        max-width: 100%;
         line-height: 1.2;
+        word-wrap: break-word;
     }
     
     .hero-subtext {
         font-size: 16px;
         margin-top: 10px;
+        width: 100%;
+        max-width: 100%;
     }
     
     .image-placeholder {
         justify-content: center;
         margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
     }
     
     .image-placeholder img {
@@ -325,6 +349,7 @@ button {
         margin-left: 0;
         justify-content: center;
         width: 100%;
+        max-width: 100%;
     }
     
     /* Segment 2 - Info boxes */
