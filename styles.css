@@ -140,7 +140,7 @@ button {
     flex: 1;
     justify-content: center;
     flex-direction: column;
-    padding-top: 5vh;
+    
     
 }
 
@@ -166,12 +166,14 @@ button {
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
+    scrollbar-width: none;
 }
 
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    
     
 }
 
@@ -189,8 +191,16 @@ button {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #b42525;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
+
+.slider-nav a:hover,
+.slider-nav a.active {
+    background-color: #3882f6;
+}
+
+
 
 .slider-wrapper{
     position: relative;
