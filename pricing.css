@@ -189,3 +189,92 @@ button:hover{
         padding: 10px;
     }
 }
+
+/* Landscape orientation for mobile devices */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Selection container adjustments for landscape */
+    .selection {
+        flex-direction: row;
+        gap: 1vh;
+        padding: 0.5rem;
+        margin-bottom: 0.5vh;
+    }
+    
+    /* Option cards adjustments for landscape */
+    .option {
+        width: 25%;
+        height: 25vh;
+        padding: 1vh;
+        margin-bottom: 0;
+    }
+    
+    /* Typography adjustments for landscape */
+    .option h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5vh;
+    }
+    
+    .option h3 {
+        font-size: 1rem;
+        margin-bottom: 0.3vh;
+    }
+    
+    .option h5 {
+        font-size: 0.8rem;
+        margin-bottom: 0.5vh;
+    }
+    
+    /* Button adjustments for landscape */
+    button {
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        margin-top: 0.5vh;
+    }
+    
+    /* Popup adjustments for landscape */
+    .popup-content {
+        margin: 10px;
+        max-width: 80%;
+        padding: 10px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+/* Landscape for small mobile devices */
+@media (max-width: 480px) and (orientation: landscape) {
+    .selection {
+        gap: 0.5vh;
+        padding: 0.3rem;
+    }
+    
+    .option {
+        width: 30%;
+        height: 20vh;
+        padding: 0.5vh;
+    }
+    
+    .option h1 {
+        font-size: 1rem;
+    }
+    
+    .option h3 {
+        font-size: 0.9rem;
+    }
+    
+    .option h5 {
+        font-size: 0.7rem;
+    }
+    
+    button {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+    }
+    
+    .popup-content {
+        max-width: 70%;
+        max-height: 70vh;
+        padding: 8px;
+    }
+}
