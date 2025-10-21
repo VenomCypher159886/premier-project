@@ -245,8 +245,22 @@ button {
     border-radius: 8px;
     
 }
+
+.item-1-box img{
+    width: 65%;
+}
 .item-1, .item-2, .item-3, .item-4 {
    display: flex;
+}
+
+.item-1 a, item-2 a, item-3 a, item-4 a{
+    /*border: #b42525 solid;*/
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: min-content;
 }
 
 .segment-3{
@@ -424,12 +438,13 @@ button {
         padding: 10px;
         gap: 20px;
         justify-content: center;
+        flex: 1;
     }
     
     .item-1, .item-2, .item-3, .item-4 {
         width: 65%;
         min-width: 140px;
-        height: 65%;
+        height: 50%;
         padding: 10px;
     }
     
@@ -438,11 +453,17 @@ button {
         height: 22vh;
         min-height: 120px;
         margin: 30px;
+        
     }
     
+   
+
+    #text-anchor-1{
+        align-items: flex-start;
+    }
     .item-1-box img, .item-2-box img, .item-3-box img, .item-4-box img {
         width: 80%;
-        height: 60%;
+        height: 50%;
         object-fit: cover;
         border-radius: 8px;
     }
