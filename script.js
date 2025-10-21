@@ -76,3 +76,26 @@ document.addEventListener('DOMContentLoaded', function() {
     goToSlide(0);
     startAutoSlide();
 });
+
+// script for pricing page
+
+document.addEventListener('DOMContentLoaded', function() {
+    const openPopupBtn = document.getElementById('quote-1');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+    const myPopup = document.getElementById('myPopup');
+  
+    openPopupBtn.addEventListener('click', function() {
+      myPopup.classList.add('show');
+    });
+  
+    closePopupBtn.addEventListener('click', function() {
+      myPopup.classList.remove('show');
+    });
+  
+    // Optional: Close popup when clicking outside the content
+    myPopup.addEventListener('click', function(event) {
+      if (event.target === myPopup) {
+        myPopup.classList.remove('show');
+      }
+    });
+  });

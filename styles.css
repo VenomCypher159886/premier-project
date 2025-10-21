@@ -6,6 +6,11 @@ body {
     overflow-x: hidden;
 }
 
+body a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
 .segment-1 {
     display: flex;
     min-height: 25vh;
@@ -92,6 +97,7 @@ ul {
     font-size: 40px;
     color: #f9faf8;
     width: 75%;
+    margin-left: 0.5rem;
 }
 
 .hero-subtext {
@@ -120,7 +126,7 @@ ul {
 
 
 button {
-    background-color: #3882f6;
+    background-color: #0f3d88;
     color: white;
     padding: 10px 20px;
     margin-top: 16px;

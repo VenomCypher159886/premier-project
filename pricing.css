@@ -1,0 +1,191 @@
+.selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    box-sizing: border-box;
+   
+    margin-bottom: 1.5vh;
+    padding: 2rem;
+    gap: 5vh;
+    flex: 1 0 25%;
+}
+
+.option {
+    padding: 2vh;
+    width: 25%;
+    height: 25vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+   /* background-image: linear-gradient(to bottom, #ee3333, #1f2937); /* Red to Blue */
+   background-color: rgb(190, 30, 30);
+   
+    border-radius: 15px;
+}
+
+.option h1, h3, h5 {
+    margin: 0%;
+    height: min-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #083b72;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+button:hover{
+    transform: scale(1.1); /* Expands the button by 10% on hover */
+}
+
+.popup-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure it's on top of other content */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Optional: Add a class to show the popup */
+  .popup-overlay.show {
+    display: flex;
+  }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Prevent horizontal overflow */
+    * {
+        box-sizing: border-box;
+    }
+    
+    /* Selection container adjustments */
+    .selection {
+        flex-direction: column;
+        gap: 2vh;
+        padding: 1rem;
+        margin-bottom: 1vh;
+    }
+    
+    /* Option cards adjustments */
+    .option {
+        width: 100%;
+        height: auto;
+        min-height: 20vh;
+        padding: 1.5vh;
+        margin-bottom: 1vh;
+    }
+    
+    /* Typography adjustments */
+    .option h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1vh;
+    }
+    
+    .option h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5vh;
+    }
+    
+    .option h5 {
+        font-size: 1rem;
+        margin-bottom: 1vh;
+    }
+    
+    /* Button adjustments */
+    button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
+        margin-top: 1vh;
+    }
+    
+    /* Popup adjustments */
+    .popup-content {
+        margin: 20px;
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    .popup-overlay {
+        padding: 10px;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .selection {
+        gap: 3vh;
+        padding: 1.5rem;
+    }
+    
+    .option {
+        width: 30%;
+        height: 22vh;
+    }
+    
+    .option h1 {
+        font-size: 1.8rem;
+    }
+    
+    .option h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .selection {
+        padding: 0.5rem;
+        gap: 1vh;
+    }
+    
+    .option {
+        padding: 1vh;
+        min-height: 18vh;
+    }
+    
+    .option h1 {
+        font-size: 1.3rem;
+    }
+    
+    .option h3 {
+        font-size: 1.1rem;
+    }
+    
+    .option h5 {
+        font-size: 0.9rem;
+    }
+    
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .popup-content {
+        margin: 10px;
+        padding: 10px;
+    }
+}
