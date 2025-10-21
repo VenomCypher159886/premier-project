@@ -3,8 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-    box-sizing: border-box;
-   
+    
+    
     margin-bottom: 1.5vh;
     padding: 2rem;
     gap: 5vh;
@@ -14,7 +14,6 @@
 .option {
     padding: 2vh;
     width: 25%;
-    height: 25vh;
     flex-wrap: wrap;
     justify-content: center;
     display: flex;
@@ -96,6 +95,7 @@ button:hover{
         min-height: 20vh;
         padding: 1.5vh;
         margin-bottom: 1vh;
+       
     }
     
     /* Typography adjustments */
@@ -143,7 +143,7 @@ button:hover{
     
     .option {
         width: 30%;
-        height: 22vh;
+        
     }
     
     .option h1 {
@@ -198,39 +198,14 @@ button:hover{
         gap: 1vh;
         padding: 0.5rem;
         margin-bottom: 0.5vh;
+
     }
     
     /* Option cards adjustments for landscape */
-    .option {
-        width: 25%;
-        height: 25vh;
-        padding: 1vh;
-        margin-bottom: 0;
-    }
-    
-    /* Typography adjustments for landscape */
-    .option h1 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5vh;
-    }
-    
-    .option h3 {
-        font-size: 1rem;
-        margin-bottom: 0.3vh;
-    }
-    
-    .option h5 {
-        font-size: 0.8rem;
-        margin-bottom: 0.5vh;
-    }
+
     
     /* Button adjustments for landscape */
-    button {
-        width: 100%;
-        padding: 8px 12px;
-        font-size: 0.8rem;
-        margin-top: 0.5vh;
-    }
+  
     
     /* Popup adjustments for landscape */
     .popup-content {
